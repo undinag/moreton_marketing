@@ -1,0 +1,459 @@
+/* Custom Properties */
+
+:root {
+    --navy-blue: #07539f;
+    --golden: #f9c332;
+    --gray: #656668;
+}
+
+/* General */
+
+body {
+    font-family: 'Avenir', sans-serif;
+    margin: 0;
+    background-color: white;
+    color: var(--gray);
+    text-align: center;
+}
+
+header {
+    text-align: right;
+    background-color: white;
+    position: fixed;
+    top: 1em;
+    left: 0;
+}
+
+section {
+    margin: 0em 1em;
+    padding-top: 1em;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin: 2em 0 1em 0em;
+    padding-top: 2em;
+    text-transform: uppercase;
+    color: var(--golden);
+}
+
+h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: var(--golden);
+    font-weight: bold;
+}
+
+p  {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+label {
+    color: var(--gray);
+    text-transform: uppercase;
+    display: block;
+    font-size: 0.5rem;
+    margin-top: 1em;
+}
+
+img {
+    width: 150px;
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.5em 0.5em;
+}
+
+nav {
+    padding-top: 0.5em;
+    position: fixed;
+    background: white;
+    top: 0;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.21);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.21);
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+input[type=text] {
+    color: var(--gray);
+    border: 1px solid rgba(101,102,104, 0.2);
+    width: 100%;
+    box-sizing : border-box;
+    padding: 0.5em;
+    box-shadow: inset 0.5px 0.5px rgba(101,102,104, 0.2);
+    background-color: rgba(240, 242, 248, 0.418);
+}
+
+input[type=button] {
+    background-color: var(--navy-blue);
+    width: 100%;
+    padding: 0.25em;
+    display: block;
+    color: white;
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.25em;
+    font-size: 0.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: rgba(7,83,159, 0.8);
+}
+
+textarea {
+    width: 100%;
+    color: var(--gray);
+    border: 1px solid rgba(101,102,104, 0.2);
+    box-sizing : border-box;
+    padding: 0.5em;
+    box-shadow: inset 0.5px 0.5px rgba(101,102,104, 0.2);
+    background-color: rgba(240, 242, 248, 0.418);
+}
+
+footer {
+    background-color: var(--gray);
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    bottom: 0;
+    margin-bottom: -1em;
+    padding: 1em 0em;
+}
+
+footer p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+footer i {
+    padding: 0.25em 0.25em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Classes */
+
+/* banner/nav edits */
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+nav #myLinks {
+    display: none;
+    text-align: right;
+    padding-top: 2em;
+}
+
+/* Style the hamburger menu */
+nav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+nav a:hover {
+    color: black;
+}
+
+.hero-bg {
+    background: var(--navy-blue) url(../images/DigitalMarketing_Header_Color.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: white;
+    text-align: center;
+    padding-bottom: 4em;
+    padding-top: 2em;
+    z-index: -1;
+}
+
+.hero-bg a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 50px;
+    color: var(--gray);
+    padding-right: 1em;
+    text-transform: uppercase;
+    display: block;
+}
+
+.hero-bg p {
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+}
+
+.services {
+    align-content: center;
+    margin: 2%;
+}
+
+.services img {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.service-item {
+    background-color:var(--navy-blue);
+    box-shadow: 3px 3px 10px var(--gray);
+    border: white solid;
+    color: white;
+    padding: 1em;
+    margin: 2em 3em;
+    border-radius: 1em;
+}
+
+.engage {
+    background-color: var(--gray);
+    color: white;
+    margin: 0;
+    margin-top: 2em;
+}
+
+.engage img {
+    width: 100%;
+    padding: 1em 0;
+    object-fit: cover;
+}
+
+.engage h3 {
+    padding-top: 1.5em;
+    color: white;
+}
+
+.engage p {
+    padding: 1em 1em 2em 1em;
+}
+
+.form-container {
+    background-color: white;
+    text-align: left;
+    width: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    z-index: -1;
+}
+
+@media (min-width: 600px) {  /* Potrait Ipad */
+    .form-container {
+        width: 500px;
+    }
+} 
+
+
+@media (min-width: 770px) { /* Landscape Ipad and Desktop */
+
+    h1 {
+        font-size: 3rem;
+        padding-top: 1em;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    p  {
+        font-size: 1.3rem;
+    }
+
+
+    img {
+        width: 350px;
+    }
+
+    nav {
+        overflow: auto;
+        /* background-color: rgba(255,255,255,1); */
+    }
+
+    nav #myLinks {
+        display: inline;
+    }
+    
+    /* Style the hamburger menu */
+    nav a.icon {
+        display: none;
+    }
+    
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    h1 {
+        margin: 1em 0 1em 0em;
+        padding-top: 1em;
+        text-transform: uppercase;
+        color: var(--golden);
+    }    
+
+    .hero-bg a {
+        font-size: 1.3rem;
+        color: var(--gray);
+        display: inline;
+    }
+
+    .hero-bg p {
+        margin: 1em 3em;
+        font-size: 2rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /* servics edits */
+
+    .services {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+
+    .services h3 {
+        clear:both;
+    }
+
+    .services p {
+        margin: 1em 2em;
+        padding: 0;
+        display: block;
+    }
+
+    .services img {
+        display: block;
+        width: 60%;
+        margin-left: 17%;
+        margin-right: 20%;
+    }
+
+    input[type=button] {
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+
+    .row-services {
+        display: flex;
+    }
+
+    .service-item {
+        margin: 1em;
+    }
+
+
+    .service-item p {
+        margin: 1em 0.5em;
+    }
+
+    /* engagement edits */
+
+    .engage {
+        padding: 1em 2em 2em 2em;
+    }
+
+    .engage img {
+        padding: 0;
+    }
+    
+    .consult{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas:
+            "pic content";
+    }
+
+    .right-col {
+        grid-area: content;
+        padding: 0 1em;
+        align-self: center;
+    }
+
+    .consult img {
+        grid-area: pic;
+        height: 100%;
+
+    }
+
+    .implement{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas:
+            "imp pict";
+    }
+
+    .left-col {
+        grid-area: imp;
+        padding: 0 1em;
+        align-self: center;
+    }
+
+    .implement img {
+        grid-area: pict;
+        height: 100%;
+    }
+
+    /* contact edits */
+    
+    .form-container {
+        width: 600px;
+    }
+
+    .contact {
+        margin: 1em 10em;
+    }
+
+    input[type=text] {
+        height: 2.3rem;
+        font-size: 1.5rem;
+        color: var(--gray);
+
+    }
+
+    textarea {
+        font-size: 1.5rem;
+        box-sizing : border-box;
+    }
+    
+    label {
+        font-size: 1rem;
+    }
+    
+    footer p {
+        font-size: 1.3rem;
+        margin-bottom: 0.5em;
+    }
+    
+    footer i {
+        padding: 0em 0.25em 0.25em 0.25em;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+}
